@@ -23,7 +23,7 @@ public class TestInterceptor extends HandlerInterceptorAdapter {
                              Object handler) throws Exception {
         String uri = request.getRequestURI();
 
-        // 判断路径是登出还是登录验证，是这两者之一的话执行Controller中定义的方法
+
         if(uri.endsWith("/test1") || uri.endsWith("/test2")) {
             return true;
         }
